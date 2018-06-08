@@ -30,5 +30,11 @@ def updateUserScore(newUser, userName, score):
         input = open('userScores.txt', 'r')
         for line in input:
             content = line.split()
-            if content[0] == userName
-                
+            if content[0] == userName:
+                temp.write(userName + ', ' + score + '\n')
+            else:
+                temp.write(line)
+        input.close()
+        remove('userScores.txt')
+        rename('userScores.tmp', 'userScores.txt')
+
