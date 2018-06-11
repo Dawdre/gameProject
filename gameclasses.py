@@ -18,3 +18,10 @@ class Game:
             print("Hence, number of questions will be set to 10")
         else:
             self._noOfQuestions = value
+
+class BinaryGame:
+    def generateQuestions(self):
+        from random import randint
+        score = 0
+
+        for i in range(self.noOfQuestions):
