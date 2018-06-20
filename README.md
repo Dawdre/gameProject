@@ -1,1 +1,2 @@
 # gameProject
+Python Book exercises.
